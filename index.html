@@ -38,6 +38,234 @@
 	<script src="js/typed.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
+
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h1:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            border-radius: 2px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 15px;
+            color: #3498db;
+        }
+        
+        .award-item, .cert-item {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .award-item:last-child, .cert-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .award-item:before, .cert-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #3498db;
+        }
+        
+        .award-title, .cert-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .award-organization, .cert-organization {
+            font-size: 1.1rem;
+            color: #3498db;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .award-year, .cert-date {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .award-description, .cert-description {
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .credential-id {
+            font-family: monospace;
+            background-color: #f8f9fa;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 8px;
+            color: #2c3e50;
+        }
+        
+        .project-link {
+            color: #3498db;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        
+        .project-link i {
+            margin-right: 5px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        @media (max-width: 992px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .award-title, .cert-title {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        .badge {
+            display: inline-block;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body id="top">
@@ -73,6 +301,7 @@
 				<!--	<li><a href="#services">WHAT I DO</a></li>-->
 					<!--<li><a href="#portfolio">PORTFOLIO</a></li>-->
 					<li><a href="#about">ABOUT ME</a></li>
+					<li><a href="#Professional_achievements">Professional Achievements</a></li>
 					<li><a href="#contact">CONTACT</a></li>
 					<li><a href="#cv">MY CV</a></li>
 				</ul>
@@ -319,7 +548,7 @@
 						<ul class="list-inline social-buttons">
 							<li><a href="https://github.com/john-bagiliko/" target="_blank"><i class="fa fa-2x fa-github"></i></a>
 							</li>
-							<li><a href="https://web.facebook.com/bagiliko.john" target="_blank"><i class="fa fa-2x fa-facebook "></i></a>
+							<!-- <li><a href="https://web.facebook.com/bagiliko.john" target="_blank"><i class="fa fa-2x fa-facebook "></i></a> -->
 							</li>
 							<li><a href="https://linkedin.com/in/johnbagiliko/" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a>
 							</li>
@@ -334,6 +563,164 @@
 			</div>
 		</div>
 	</section>
+	<section id="Professional_achievements">
+	<header>
+            <h1>Professional Achievements</h1>
+            <p class="subtitle">A showcase of awards, scholarships, certifications, and key projects</p>
+        </header>
+        
+        <div class="grid-container">
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-trophy"></i> Awards, Scholarships and Grants</h2>
+                
+                <div class="award-item">
+                    <div class="award-title">Heidelberg Laureate Forum Young Researcher</div>
+                    <div class="award-organization">Heidelberg Laureate Forum</div>
+                    <div class="award-year">2024</div>
+                    <div class="award-description">Selected as one of 200 young researchers globally to participate in the 11th Heidelberg Laureate Forum (HLF) in Heidelberg, Germany.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">SAP Grant</div>
+                    <div class="award-organization">SAP SE</div>
+                    <div class="award-year">2024</div>
+                    <div class="award-description">Selected among 20 participants to receive the SAP Grant, covering all expenses for the 11th Heidelberg Laureate Forum in Heidelberg, Germany.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">Poster Award</div>
+                    <div class="award-organization">Deep Learning Indaba 2023</div>
+                    <div class="award-year">2023</div>
+                    <div class="award-description">Won a poster prize for presenting work at Africa's biggest data science/machine learning gathering, receiving a signed copy of the book "Deep Learning".</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">IndabaX Poster Award</div>
+                    <div class="award-organization">IndabaX Rwanda Workshop at ICLR 2023</div>
+                    <div class="award-year">2023</div>
+                    <div class="award-description">Second-best poster presenter at IndabaX Rwanda, 2023, receiving a cash prize of 400 USD.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">AIMS - Carnegie Scholarship</div>
+                    <div class="award-organization">Carnegie Corporation of New York</div>
+                    <div class="award-year">2021</div>
+                    <div class="award-description">Awarded this prestigious scholarship, fully funding my Ph.D. program.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">Winner, Johnson & Johnson Africa Science Week Champions of Science Storytelling Challenge</div>
+                    <div class="award-organization">Johnson & Johnson</div>
+                    <div class="award-year">2020</div>
+                    <div class="award-description">Entry selected as one of five winning stories in Africa, receiving a prize of 5,000 USD.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">First Runner-Up, Zindi Hackathon</div>
+                    <div class="award-organization">Zindi</div>
+                    <div class="award-year">2019</div>
+                    <div class="award-description">Key player in a 3-member team placing second out of over 100 participants in a machine learning hackathon in Kigali, Rwanda, receiving 1000 USD.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">Google Grant</div>
+                    <div class="award-organization">Google</div>
+                    <div class="award-year">2019</div>
+                    <div class="award-description">Received a Google grant worth 750 USD to present a poster on research at the Deep Learning Indaba 2019, Nairobi, Kenya.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">Country-Level Winner (Ghana), DataHack4FI Season 3</div>
+                    <div class="award-organization">DataHack4FI</div>
+                    <div class="award-year">2019</div>
+                    <div class="award-description">Proud data enthusiast of the country-level first-prize winning team of the DataHack4FI Season 3 Innovation Award, receiving 5000 USD for the team.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">Microsoft Award</div>
+                    <div class="award-organization">Ghana Data Science Summit</div>
+                    <div class="award-year">2019</div>
+                    <div class="award-description">Third-best poster presenter at the IndabaX Ghana, 2019 poster presentations, receiving 25 USD.</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-title">Next Einstein Full Initiative Scholarship</div>
+                    <div class="award-organization">Next Einstein Initiative</div>
+                    <div class="award-year">2017</div>
+                    <div class="award-description">Awarded this prestigious scholarship, fully funding my master's program.</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-certificate"></i> Licenses, Certifications & Key Projects</h2>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Field delineation with satellite imagery using deep learning</div>
+                    <div class="cert-organization">ICRISAT Mali</div>
+                    <div class="cert-date">May 2021 - Oct 2021</div>
+                    <div class="cert-description">Applied deep learning techniques to delineate fields using satellite imagery.</div>
+                    <a href="https://docs.google.com/presentation/d/13nciessd0o6KXi9w4SyV1mPvLoAmY8x0Z9MhUJWo05E/edit?usp=sharing" class="project-link"><i class="fas fa-external-link-alt"></i> See presentation</a>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Dog breed image classification using transfer learning</div>
+                    <div class="cert-organization">Udemy</div>
+                    <div class="cert-date">May 2020</div>
+                    <div class="cert-description">Developed a model for dog breed classification using transfer learning techniques.</div>
+                    <div class="credential-id">Credential ID: UC-0b063867-a288-45b8-b2ff-8ef1c337b59a</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</div>
+                    <div class="cert-organization">Coursera</div>
+                    <div class="cert-date">Mar 2020</div>
+                    <div class="cert-description">Advanced techniques for optimizing deep neural networks.</div>
+                    <div class="credential-id">Credential ID: C25K6WZ3EEH7</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Neural Networks and Deep Learning</div>
+                    <div class="cert-organization">Coursera</div>
+                    <div class="cert-date">Feb 2020</div>
+                    <div class="cert-description">Fundamentals of neural networks and deep learning architectures.</div>
+                    <div class="credential-id">Credential ID: A3RP8X5G9EKU</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Deep Learning For Computer Vision</div>
+                    <div class="cert-organization">Udemy</div>
+                    <div class="cert-date">Jan 2020</div>
+                    <div class="cert-description">Applied deep learning techniques to computer vision problems.</div>
+                    <div class="credential-id">Credential ID: UC-EQGQDQZX</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Machine Learning Practical Workout | 8 Real-World Projects</div>
+                    <div class="cert-organization">Udemy</div>
+                    <div class="cert-date">Jan 2020</div>
+                    <div class="cert-description">Hands-on experience with machine learning through real-world projects.</div>
+                    <div class="credential-id">Credential ID: UC-AKTGAJNS</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Microsoft Professional Program in Data Science</div>
+                    <div class="cert-organization">Microsoft</div>
+                    <div class="cert-date">Dec 2019</div>
+                    <div class="cert-description">Comprehensive data science program covering the full data science lifecycle.</div>
+                    <div class="credential-id">Credential ID: A03A0BE8-D2CE-42A3-8D8E-4B447FA360AF</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Detect and classify Pneumonia from x-ray images using deep learning</div>
+                    <div class="cert-organization">Kaggle</div>
+                    <div class="cert-date">2019</div>
+                    <div class="cert-description">Developed a deep learning model to detect and classify pneumonia from chest x-ray images.</div>
+                    <a href="https://www.kaggle.com/code/johnbagiliko/kernel36b667b425" class="project-link"><i class="fas fa-external-link-alt"></i> View on Kaggle</a>
+                </div>
+            </div>
+        </div>
+	</section>
+
 	<!-- technology -->
 	<aside class="clients">
 		<div class="container">
@@ -443,13 +830,13 @@
 					<h4>Follow me!</h4>
 					<ul class="social-icon">
 
-						<li><a href="https://fb.com/bagiliko.john" class="fa fa-3x fa-facebook">
+						<!-- <li><a href="https://fb.com/bagiliko.john" class="fa fa-3x fa-facebook"> -->
 
 							</a></li>
 						<li><a href="https://twitter.com/myzta_tee" class="fa fa-3x fa-twitter">
 
 							</a></li>
-						<li><a href="https://www.instagram.com/myzta_tee/" class="fa fa-3x fa-instagram">
+						<!-- <li><a href="https://www.instagram.com/myzta_tee/" class="fa fa-3x fa-instagram"> -->
 
 							</a></li>
 						<li><a href="https://www.linkedin.com/in/john-bagiliko-b97b0b155/" class="fa fa-3x fa-linkedin">
