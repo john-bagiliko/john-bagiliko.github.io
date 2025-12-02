@@ -1,80 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141741371-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <meta charset="utf-8">
+    <title>John Bagiliko | PhD Student - University of Rwanda</title>
+    <meta property="og:title" content="John Bagiliko">
+    <meta property="og:description" content="Data Scientist and Python Developer.">
+    <meta property="og:image" content="images/My_profile.jpeg">
+    <meta name="keywords" content="Data Scientist, Machine Learning, Climate Science, Python Developer, University of Rwanda">
+    <meta name="description" content="PhD Student at University of Rwanda">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  gtag('config', 'UA-141741371-1');
-	</script> 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Segoe+UI:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-	<meta charset="utf-8">
-	<!-- 
-        Awesome Template
-        http://www.templatemo.com/preview/templatemo_450_awesome
-        -->
-	<title>John Bagiliko | PhD student - University of Rwanda</title>
-	<meta property="og:title" content="John Bagiliko">
-<meta property="og:description" content="Data Scientist and Python Developer.">
-<meta property="og:image" content="images/My_profile.jpeg">
-	<meta name="keywords" content="Web application, Data Scientist in Ghana, Experienced Data Scientist, Software Engineer,  Accra, Ghana, Data Scientist, Data Science, Machine Learning, Web application, Artificial Intelligence, John Bagiliko, Tee, TeeSeries, Tee Series, Python Developer, Bagiliko, Zindi Ambassador, ai ghana, aighana, AI Ghana, AIGHANA, Climate Scientis, Meteorologist, PhD Student in Climate science, Quantum Leap Africa, Climatic Data Analyst, PhD by Research in Mathematics">
-	<meta name="description" content="PhD Student at University of Rwanda">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #28a7e9;
+            --text-color: #333;
+            --light-text: #7f8c8d;
+            --background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            --white: #ffffff;
+            --light-gray: #f0f0f0;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
 
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css">
-	<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-	<link rel="stylesheet" href="css/custom.css">
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.singlePageNav.min.js"></script>
-	<script src="js/typed.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/custom.js"></script>
-
-	<style>
+        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
-            color: #333;
+            font-family: 'Segoe UI', 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--background);
+            color: var(--text-color);
             line-height: 1.6;
             padding: 20px;
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 15px;
         }
-        
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 20px;
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--secondary-color);
+            font-weight: 600;
         }
-        
+
         h1 {
             font-size: 2.8rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
+            text-align: center;
+            margin-bottom: 20px;
             position: relative;
-            display: inline-block;
         }
-        
+
         h1:after {
             content: '';
             position: absolute;
@@ -83,863 +73,696 @@
             transform: translateX(-50%);
             width: 100px;
             height: 4px;
-            background: linear-gradient(to right, #3498db, #2c3e50);
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
             border-radius: 2px;
         }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            max-width: 600px;
-            margin: 0 auto;
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
         }
-        
+
+        h2 span {
+            color: var(--accent-color);
+        }
+
+        .section-subheading {
+            color: var(--light-text);
+            text-align: center;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        /* Layout */
         .section {
-            background-color: white;
+            background: var(--white);
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--shadow);
             padding: 30px;
             margin-bottom: 40px;
-            transition: transform 0.3s ease;
+            transition: var(--transition);
         }
-        
+
         .section:hover {
             transform: translateY(-5px);
         }
-        
+
         .section-title {
             font-size: 1.8rem;
-            color: #2c3e50;
             margin-bottom: 25px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #f0f0f0;
+            border-bottom: 2px solid var(--light-gray);
             display: flex;
             align-items: center;
         }
-        
+
         .section-title i {
             margin-right: 15px;
-            color: #3498db;
+            color: var(--primary-color);
         }
-        
-        .award-item, .cert-item {
+
+        /* Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color) !important;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* About Section */
+        .about-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            display: block;
+            border: 5px solid var(--white);
+            box-shadow: var(--shadow);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .social-icon {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        .social-icon:hover {
+            color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        /* Awards & Certifications */
+        .achievement-item {
             margin-bottom: 30px;
             padding-bottom: 25px;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid var(--light-gray);
             position: relative;
-            padding-left: 20px;
+            padding-left: 25px;
         }
-        
-        .award-item:last-child, .cert-item:last-child {
+
+        .achievement-item:last-child {
             border-bottom: none;
             margin-bottom: 0;
             padding-bottom: 0;
         }
-        
-        .award-item:before, .cert-item:before {
+
+        .achievement-item:before {
             content: '';
             position: absolute;
             left: 0;
-            top: 8px;
-            width: 10px;
-            height: 10px;
+            top: 10px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            background-color: #3498db;
+            background-color: var(--primary-color);
         }
-        
-        .award-title, .cert-title {
+
+        .achievement-title {
             font-size: 1.3rem;
             font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        
-        .award-organization, .cert-organization {
-            font-size: 1.1rem;
-            color: #3498db;
+            color: var(--secondary-color);
             margin-bottom: 8px;
-            font-weight: 500;
         }
-        
-        .award-year, .cert-date {
+
+        .achievement-org {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .achievement-date {
             display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 3px 12px;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 4px 15px;
             border-radius: 20px;
             font-size: 0.9rem;
             margin-bottom: 10px;
         }
-        
-        .award-description, .cert-description {
-            color: #555;
+
+        .achievement-description {
+            color: var(--text-color);
             line-height: 1.7;
+            margin-bottom: 10px;
         }
-        
-        .credential-id {
-            font-family: monospace;
-            background-color: #f8f9fa;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            display: inline-block;
-            margin-top: 8px;
-            color: #2c3e50;
-        }
-        
-        .project-link {
-            color: #3498db;
+
+        .credential-link {
+            color: var(--primary-color);
             text-decoration: none;
+            font-weight: 500;
             display: inline-flex;
             align-items: center;
-            margin-top: 8px;
-            font-weight: 500;
+            gap: 5px;
         }
-        
-        .project-link:hover {
+
+        .credential-link:hover {
             text-decoration: underline;
         }
-        
-        .project-link i {
-            margin-right: 5px;
-        }
-        
-        .grid-container {
+
+        /* Tools & Software */
+        .tools-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
         }
-        
+
+        .tool-category h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .tool-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .tool-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+
+        .tool-logo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .contact-details {
+            list-style: none;
+        }
+
+        .contact-details li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-details i {
+            color: var(--primary-color);
+            width: 20px;
+        }
+
+        /* CV Section */
+        .cv-container {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--light-text);
+            margin-top: 50px;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        /* Responsive Design */
         @media (max-width: 992px) {
             .grid-container {
                 grid-template-columns: 1fr;
             }
-        }
-        
-        @media (max-width: 768px) {
-            .section {
-                padding: 20px;
-            }
             
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
             h1 {
                 font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 20px;
             }
             
             .section-title {
                 font-size: 1.5rem;
             }
             
-            .award-title, .cert-title {
-                font-size: 1.2rem;
+            .tools-grid {
+                grid-template-columns: 1fr;
             }
         }
-        
+
         @media (max-width: 480px) {
             body {
                 padding: 10px;
             }
             
-            .section {
-                padding: 15px;
-            }
-            
             h1 {
                 font-size: 1.8rem;
             }
-        }
-        
-        .badge {
-            display: inline-block;
-            background: linear-gradient(to right, #3498db, #2c3e50);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 30px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            color: #7f8c8d;
-            font-size: 0.9rem;
+            
+            .achievement-title {
+                font-size: 1.1rem;
+            }
+            
+            .social-icon {
+                font-size: 1.5rem;
+            }
         }
 
-		.social-icon {
-  font-size: 2em; /* Controls the icon size */
-  margin: 0 10px; /* Adds some space between icons */
-  color: #333; /* Changes the icon color */
-  text-decoration: none;
-}
-.social-icon:hover {
-  opacity: 0.7; /* Adds a simple hover effect */
-}
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-4 {
+            margin-bottom: 40px;
+        }
+
+        .mt-4 {
+            margin-top: 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
     </style>
 </head>
 
-<body id="top">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">John Bagiliko</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cv">CV</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<!-- start preloader -->
-	<div class="preloader">
-		<div class="sk-spinner sk-spinner-wave">
-			<div class="sk-rect1"></div>
-			<div class="sk-rect2"></div>
-			<div class="sk-rect3"></div>
-			<div class="sk-rect4"></div>
-			<div class="sk-rect5"></div>
-		</div>
-	</div>
-	<!-- end preloader -->
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <h3 class="section-subheading">Who is John Bagiliko?</h3>
+            
+            <div class="about-content">
+                <img src="images/jb_profile_pic.jpg" alt="John Bagiliko" class="profile-img">
+                <h4>John Bagiliko</h4>
+                <p class="text-muted mb-4">
+                    Machine Learning | Data Science | Remote Sensing | Climate Science | Climate Change | Deep Learning
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/john-bagiliko/" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/johnbagiliko/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                
+                <p class="large">
+                    I am currently a PhD student at the University of Rwanda. My PhD is fully funded by a scholarship from the Carnegie Corporation of New York, given through the African Institute for Mathematical Sciences. I am researching on how to leverage machine learning to improve satellite rainfall estimates for African rain-fed agriculture. I obtained a BSc. Mathematics from the University for Development Studies, Navrongo, Ghana, in 2017. I subsequently obtained an MSc. Mathematical Sciences (Big Data and Computer Security) from AIMS Senegal, in 2019. My research interests include data science, machine learning, remote sensing, climate change, climate science, and applied mathematics. I was recently a research scholar at the International Crops Research Institute for the Semi-Arid Tropics, ICRISAT, Mali where I researched on leveraging machine learning with satellite images for plot delineation in the African rain-fed agriculture setting.
+                </p>
+            </div>
+        </div>
+    </section>
 
-
-	<!-- start navigation -->
-	<nav class="navbar navbar-default templatemo-nav" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">John Bagiliko</a>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#top">HOME</a></li>
-					<!-- <li><a href="#about">ABOUT</a></li> -->
-				<!--	<li><a href="#services">WHAT I DO</a></li>-->
-					<!--<li><a href="#portfolio">PORTFOLIO</a></li>-->
-					<li><a href="#about">ABOUT ME</a></li>
-					<li><a href="#Professional_achievements">Professional Achievements</a></li>
-					<li><a href="#tools-software">Tools & Software</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-					<li><a href="#cv">MY CV</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- end navigation -->
-
-	<!-- start home -->
-	<section id="home">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-offset-2 col-md-8 text-center">
-					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">PhD Candidate <span>at the</span> University <span> of</span>
-						Rwanda</h1>
-
-					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">TELL
-						ME MORE</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end home -->
-
-
-
-	<!--<section id="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h2 class="section-heading wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">What I do</h2>
-					<h3 class="section-subheading text-muted">Things I'm skilled at and passionate about.</h3>
-				</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-lg-10 col-lg-offset-1">
-					<div class="col-md-4 service-item">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
-							<i class="fa fa-code fa-stack-1x fa-inverse"></i>
-						</span>
-						<h4 class="service-heading">Machine <br class="hidden-xs hidden-sm hidden-md">Learning</h4>
-						<p class="text-muted">Experienced in building Machine Learning models to solve real problems.</p>
-					</div>
-					<div class="col-md-4 service-item">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
-							<i class="fa fa-code fa-stack-1x fa-inverse"></i>
-						</span>
-						<h4 class="service-heading">Artificial  <br class="hidden-xs hidden-sm hidden-md">Intelligence</h4>
-						<p class="text-muted">Passionate about AI. I work on NLP, Computer Vission, Commonsense Reasoning etc</p>
-					</div>
-					<div class="col-md-4 service-item">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
-							<i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-						</span>
-						<h4 class="service-heading">API Integration &amp; <br class="hidden-xs hidden-sm hidden-md">Development</h4>
-						<p class="text-muted">REST and API integration.<br>REST API development with Django restframework.</p>
-					</div>
-					<div class="col-md-4 service-item">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
-							<i class="fa fa-code fa-stack-1x fa-inverse"></i>
-						</span>
-						<h4 class="service-heading">Web Application Development</h4>
-						<p class="text-muted">Building applications with Python and Django </p>
-					</div>
-					<div class="col-md-4 service-item">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
-							<i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
-						</span>
-						<h4 class="service-heading">Cloud Integration</h4>
-						<p class="text-muted">Deployment of Django apps and databases to leading cloud platforms such as
-							Heroku</p>
-					</div>
-					<div class="col-md-4 service-item">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
-							<i class="fa fa-code fa-stack-1x fa-inverse"></i>
-						</span>
-						<h4 class="service-heading"> Deep  <br class="hidden-xs hidden-sm hidden-md">Learning</h4>
-						<p class="text-muted">Experienced with Deep Learning and implementing Neural Nets with tensorflow and keras.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>-->
-
-
-
-	<!-- start portfolio -->
-	<!--<section id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>AWESOME</span> PROJECTS</h2>
-					<h3 class="section-subheading text-muted text-center">My works.</h3>
-				</div>
-				
-			<div class="row bg-light">
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
-					<img src="images/work/intel.png" class="img-responsive" alt="portfolio img 1">
-				</div>
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="50" >
-					<div class="media">
-				
-						<div class="media-body">
-							<h5 class="mt-0">Data Visualisation Web Application</h5>
-							<p>this is an awesome full stack web application using Python, Django, Django RestFramework and JavaScript.</p>
-							<p class="mb-5">This web applicaton visualizes data of the Senegalese market.</p>
-							<h5>Visite <a target="_blank" href="http://vps604885.ovh.net:8888/primary/">site</a></h5>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<hr class="display-4">
-			<div class="row bg-light">
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="50" >
-					<img src="images/work/wrong.png" class="img-responsive" alt="portfolio img 1">
-				</div>
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="media">
-				
-						<div class="media-body">
-							<h5 class="mt-0">Artificial Intelligence Research</h5>
-							<p>This is my research thesis for my master degree in Big Data and Computer Security. This project sought to solve the problem of Commonsense Reasoning in Artificial Intelligence. Neural Network was used in conjunction with Language Models to build a model that is capable of differentiating a correct sentence from a wrong sentence based on common sense.</p>
-							<p class="mb-5">This research is published in an international scientific journal.</p>
-							<h5><a target="_blank" href="https://ijrdo.org/index.php/m/article/view/3004">See paper here</a></h5>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<hr class="display-4">
-			<div class="row bg-light">
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="50" >
-					<img src="images/work/chatbot.png" class="img-responsive" alt="portfolio img 1">
-				</div>
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="media">
-				
-						<div class="media-body">
-							<h5 class="mt-0">Chat Bot</h5>
-							<p>In this project I built a Chat Bot and integrated it in Django web app.</p>
-							<p class="mb-5">It involves Machine Learning and Reenforcement Learning.</p>
-							<h5>Visite <a target="_blank" href="https://github.com/john-bagiliko/Chatbot"> repo</a></h5>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<hr class="display-4">
-			<div class="row bg-light">
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="50" >
-					<img src="images/work/crud.png" class="img-responsive" alt="portfolio img 1">
-				</div>
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="media">
-				
-						<div class="media-body">
-							<h5 class="mt-0">CRUD web application</h5>
-							<p>In this project, I sought to introduce to new developers the best place to start with Django development. I therefore built a CRUD application using Python and  Django. A user is able to create, delete, edit and view a post</p>
-							<p class="mb-5">It is available on Github.</p>
-							<h5>See <a target="_blank" href="https://medium.com/@john.bagiliko/django-crud-web-application-77ef05af1f00?source=friends_link&sk=2f306ca42251f44828bf0ee27405dca0">how I did it</a></h5>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<hr class="display-4">
-			<div class="row bg-light">
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="50" >
-					<img src="images/work/bakelitech.png" class="img-responsive" alt="portfolio img 1">
-				</div>
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="media">
-				
-						<div class="media-body">
-							<h5 class="mt-0">Online Learning Platform</h5>
-							<p>This platform gives the ability to learn courses online. I was part of the team that built this platform</p>
-							<p class="mb-5">Try it out and you will not be the same.</p>
-							<h5>Visite <a target="_blank" href="https://www.bakeli.tech/">site</a></h5>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<hr class="display-4">
-			<div class="row bg-light">
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="50" >
-					<img src="images/work/sunulex.png" class="img-responsive" alt="portfolio img 1">
-				</div>
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="media">
-				
-						<div class="media-body">
-							<h5 class="mt-0">Document Classification Web Application with Machine Learning and Artificial Intelligence</h5>
-							<p>This application helps classify documents based on the category they fall into. </p>
-							<p class="mb-5">A Machine Learning algorithn is used to classify any new document that is uploaded and the application allows search for a document by key word or by category.</p>
-							<h5>Will be active <a target="_blank" href="#">Soon</a></h5>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-		<hr class="display-4">
-			<div class="row bg-light">
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="50" >
-					<img src="images/work/contactapp.png" class="img-responsive" alt="portfolio img 1">
-				</div>
-				<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="media">
-				
-						<div class="media-body">
-							<h5 class="mt-0">Contact APp</h5>
-							<p>This platform gives one the ability to save contact details of indivuals, modify them, delete, and view all contacts in a good looking user-friendly interface.</p>
-							<p class="mb-5">I can build things like these and solve more complex problems.</p>
-							<h5>Visite <a target="_blank" href="https://johnbagiliko.pythonanywhere.com/">site</a></h5>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>-->
-	<!-- end portfolio -->
-	<!-- about section -->
-	<section id="about" class="bg-white">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading" data-wow-offset="50" data-wow-delay="0.3s">About Me</h2>
-					<h3 class="section-subheading text-muted">Who is John Bagiliko?</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="team-member">
-						<img src="images/jb_profile_pic.jpg" class="img-responsive img-circle" alt="john photo">
-						<h4>John Bagiliko</h4>
-						<p class="text-muted">Machine Learning | Data Science | Remote Sensing | Climate Science | Climate Change | Deep Learning </p>
-						<ul class="list-inline social-buttons">
-							<li><a href="https://github.com/john-bagiliko/" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
-							</li>
-							<li><a href="https://linkedin.com/in/johnbagiliko/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 text-center">
-						<p class="large text-muted"> I am currently a PhD student at the University of Rwanda. 
-							My PhD is fully funded by a scholarship from the Carnegie Corporation of New York, 
-							given through the African Institute for Mathematical Sciences. 
-							I am researching on how to leverage machine learning to improve 
-							satellite rainfall estimates for African rain-fed agriculture. 
-							I obtained a BSc. Mathematics from the University for Development Studies, Navrongo, Ghana, in 2017.  
-							I subsequently obtained an MSc. Mathematical Sciences (Big Data and Computer Security) from AIMS Senegal, 
-							in 2019.  My research interests include data science, machine learning, remote sensing, 
-							climate change, climate science, and applied mathematics.  I was recently a research scholar at the 
-							International Crops Research Institute for the Semi-Arid Tropics, ICRISAT, 
-							Mali where I researched on leveraging machine learning with satellite images 
-							for plot delineation in the African rain-fed agriculture setting.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="Professional_achievements">
-	<header>
+    <!-- Professional Achievements -->
+    <section id="achievements" class="section">
+        <div class="container">
             <h1>Professional Achievements</h1>
-            <p class="subtitle">A showcase of awards, scholarships, certifications, and key projects</p>
-        </header>
-        
-        <div class="grid-container">
-            <div class="section">
-                <h2 class="section-title"><i class="fas fa-trophy"></i> Awards, Scholarships and Grants</h2>
-                
-                <div class="award-item">
-                    <div class="award-title">Heidelberg Laureate Forum Young Researcher</div>
-                    <div class="award-organization">Heidelberg Laureate Forum</div>
-                    <div class="award-year">2024</div>
-                    <div class="award-description">Selected as one of 200 young researchers globally to participate in the 11th Heidelberg Laureate Forum (HLF) in Heidelberg, Germany.</div>
+            <p class="section-subheading">A showcase of awards, scholarships, certifications, and key projects</p>
+            
+            <div class="grid-container">
+                <div class="section">
+                    <h2 class="section-title"><i class="fas fa-trophy"></i> Awards, Scholarships and Grants</h2>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-title">Heidelberg Laureate Forum Young Researcher</div>
+                        <div class="achievement-org">Heidelberg Laureate Forum</div>
+                        <div class="achievement-date">2024</div>
+                        <div class="achievement-description">Selected as one of 200 young researchers globally to participate in the 11th Heidelberg Laureate Forum (HLF) in Heidelberg, Germany.</div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-title">SAP Grant</div>
+                        <div class="achievement-org">SAP SE</div>
+                        <div class="achievement-date">2024</div>
+                        <div class="achievement-description">Selected among 20 participants to receive the SAP Grant, covering all expenses for the 11th Heidelberg Laureate Forum in Heidelberg, Germany.</div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-title">Poster Award</div>
+                        <div class="achievement-org">Deep Learning Indaba 2023</div>
+                        <div class="achievement-date">2023</div>
+                        <div class="achievement-description">Won a poster prize for presenting work at Africa's biggest data science/machine learning gathering, receiving a signed copy of the book "Deep Learning".</div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-title">IndabaX Poster Award</div>
+                        <div class="achievement-org">IndabaX Rwanda Workshop at ICLR 2023</div>
+                        <div class="achievement-date">2023</div>
+                        <div class="achievement-description">Second-best poster presenter at IndabaX Rwanda, 2023, receiving a cash prize of 400 USD.</div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                    <div class="achievement-title">AIMS - Carnegie Scholarship</div>
+                    <div class="achievement-org">Carnegie Corporation of New York</div>
+                    <div class="achievement-date">2021</div>
+                    <div class="achievement-description">Awarded this prestigious scholarship, fully funding my Ph.D. program.</div>
                 </div>
                 
-                <div class="award-item">
-                    <div class="award-title">SAP Grant</div>
-                    <div class="award-organization">SAP SE</div>
-                    <div class="award-year">2024</div>
-                    <div class="award-description">Selected among 20 participants to receive the SAP Grant, covering all expenses for the 11th Heidelberg Laureate Forum in Heidelberg, Germany.</div>
+                <div class="achievement-item">
+                    <div class="achievement-title">Winner, Johnson & Johnson Africa Science Week Champions of Science Storytelling Challenge</div>
+                    <div class="achievement-org">Johnson & Johnson</div>
+                    <div class="achievement-date">2020</div>
+                    <div class="achievement-description">Entry selected as one of five winning stories in Africa, receiving a prize of 5,000 USD.</div>
                 </div>
                 
-                <div class="award-item">
-                    <div class="award-title">Poster Award</div>
-                    <div class="award-organization">Deep Learning Indaba 2023</div>
-                    <div class="award-year">2023</div>
-                    <div class="award-description">Won a poster prize for presenting work at Africa's biggest data science/machine learning gathering, receiving a signed copy of the book "Deep Learning".</div>
-                </div>
-                
-                <div class="award-item">
-                    <div class="award-title">IndabaX Poster Award</div>
-                    <div class="award-organization">IndabaX Rwanda Workshop at ICLR 2023</div>
-                    <div class="award-year">2023</div>
-                    <div class="award-description">Second-best poster presenter at IndabaX Rwanda, 2023, receiving a cash prize of 400 USD.</div>
-                </div>
-                
-                <div class="award-item">
-                    <div class="award-title">AIMS - Carnegie Scholarship</div>
-                    <div class="award-organization">Carnegie Corporation of New York</div>
-                    <div class="award-year">2021</div>
-                    <div class="award-description">Awarded this prestigious scholarship, fully funding my Ph.D. program.</div>
-                </div>
-                
-                <div class="award-item">
-                    <div class="award-title">Winner, Johnson & Johnson Africa Science Week Champions of Science Storytelling Challenge</div>
-                    <div class="award-organization">Johnson & Johnson</div>
-                    <div class="award-year">2020</div>
-                    <div class="award-description">Entry selected as one of five winning stories in Africa, receiving a prize of 5,000 USD.</div>
-                </div>
-                
-                <div class="award-item">
-                    <div class="award-title">First Runner-Up, Zindi Hackathon</div>
-                    <div class="award-organization">Zindi</div>
-                    <div class="award-year">2019</div>
+                <div class="achievement-item">
+                    <div class="achievement-title">First Runner-Up, Zindi Hackathon</div>
+                    <div class="achievement-org">Zindi</div>
+                    <div class="achievement-date">2019</div>
                     <div class="award-description">Key player in a 3-member team placing second out of over 100 participants in a machine learning hackathon in Kigali, Rwanda, receiving 1000 USD.</div>
                 </div>
                 
-                <div class="award-item">
-                    <div class="award-title">Google Grant</div>
-                    <div class="award-organization">Google</div>
-                    <div class="award-year">2019</div>
-                    <div class="award-description">Received a Google grant worth 750 USD to present a poster on research at the Deep Learning Indaba 2019, Nairobi, Kenya.</div>
+                <div class="achievement-item">
+                    <div class="achievement-title">Google Grant</div>
+                    <div class="achievement-org">Google</div>
+                    <div class="achievement-date">2019</div>
+                    <div class="achievement-description">Received a Google grant worth 750 USD to present a poster on research at the Deep Learning Indaba 2019, Nairobi, Kenya.</div>
                 </div>
                 
-                <div class="award-item">
-                    <div class="award-title">Country-Level Winner (Ghana), DataHack4FI Season 3</div>
-                    <div class="award-organization">DataHack4FI</div>
-                    <div class="award-year">2019</div>
-                    <div class="award-description">Proud data enthusiast of the country-level first-prize winning team of the DataHack4FI Season 3 Innovation Award, receiving 5000 USD for the team.</div>
+                <div class="achievement-item">
+                    <div class="achievement-title">Country-Level Winner (Ghana), DataHack4FI Season 3</div>
+                    <div class="achievement-org">DataHack4FI</div>
+                    <div class="achievement-date">2019</div>
+                    <div class="achievement-description">Proud data enthusiast of the country-level first-prize winning team of the DataHack4FI Season 3 Innovation Award, receiving 5000 USD for the team.</div>
                 </div>
                 
-                <div class="award-item">
-                    <div class="award-title">Microsoft Award</div>
-                    <div class="award-organization">Ghana Data Science Summit</div>
-                    <div class="award-year">2019</div>
-                    <div class="award-description">Third-best poster presenter at the IndabaX Ghana, 2019 poster presentations, receiving 25 USD.</div>
+                <div class="achievement-item">
+                    <div class="achievement-title">Microsoft Award</div>
+                    <div class="achievement-org">Ghana Data Science Summit</div>
+                    <div class="achievement-date">2019</div>
+                    <div class="achievement-description">Third-best poster presenter at the IndabaX Ghana, 2019 poster presentations, receiving 25 USD.</div>
                 </div>
                 
-                <div class="award-item">
-                    <div class="award-title">Next Einstein Full Initiative Scholarship</div>
-                    <div class="award-organization">Next Einstein Initiative</div>
-                    <div class="award-year">2017</div>
-                    <div class="award-description">Awarded this prestigious scholarship, fully funding my master's program.</div>
+                <div class="achievement-item">
+                    <div class="achievement-title">Next Einstein Full Initiative Scholarship</div>
+                    <div class="achievement-org">Next Einstein Initiative</div>
+                    <div class="achievement-date">2017</div>
+                    <div class="achievement-description">Awarded this prestigious scholarship, fully funding my master's program.</div>
                 </div>
-            </div>
-            
-            <div class="section">
-                <h2 class="section-title"><i class="fas fa-certificate"></i> Licenses, Certifications & Key Projects</h2>
+                    <!-- More award items... -->
+                </div>
                 
-				<div class="cert-item">
-                    <div class="cert-title">Convolutional Neural Networks</div>
-                    <div class="cert-organization">DeepLearning.AI</div>
-                    <div class="cert-date">Dec 2025</div>
-                    <div class="cert-description">Understanding and applying Convolutional Neural Networks in real-word applications</div>
-					<a href="https://www.coursera.org/account/accomplishments/verify/IPJFM2NGENG6" class="project-link"><i class="fas fa-external-link-alt"></i> Show credential</a>
-                </div>
+                <div class="section">
+                    <h2 class="section-title"><i class="fas fa-certificate"></i> Licenses, Certifications & Key Projects</h2>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-title">Convolutional Neural Networks</div>
+                        <div class="achievement-org">DeepLearning.AI</div>
+                        <div class="achievement-date">Dec 2025</div>
+                        <div class="achievement-description">Understanding and applying Convolutional Neural Networks in real-word applications</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/IPJFM2NGENG6" class="credential-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Show credential
+                        </a>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-title">Field delineation with satellite imagery using deep learning</div>
+                        <div class="achievement-org">ICRISAT Mali</div>
+                        <div class="achievement-date">May 2021 - Oct 2021</div>
+                        <div class="achievement-description">Applied deep learning techniques to delineate fields using satellite imagery.</div>
+                        <a href="https://docs.google.com/presentation/d/13nciessd0o6KXi9w4SyV1mPvLoAmY8x0Z9MhUJWo05E/edit?usp=sharing" class="credential-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Show presentation
+                        </a>
+                    </div>
 
-                <div class="cert-item">
-                    <div class="cert-title">Field delineation with satellite imagery using deep learning</div>
-                    <div class="cert-organization">ICRISAT Mali</div>
-                    <div class="cert-date">May 2021 - Oct 2021</div>
-                    <div class="cert-description">Applied deep learning techniques to delineate fields using satellite imagery.</div>
-                    <a href="https://docs.google.com/presentation/d/13nciessd0o6KXi9w4SyV1mPvLoAmY8x0Z9MhUJWo05E/edit?usp=sharing" class="project-link"><i class="fas fa-external-link-alt"></i> Show presentation</a>
-                </div>
-                
-                <div class="cert-item">
-                    <div class="cert-title">Dog breed image classification using transfer learning</div>
-                    <div class="cert-organization">Udemy</div>
-                    <div class="cert-date">May 2020</div>
-                    <div class="cert-description">Developed a model for dog breed classification using transfer learning techniques.</div>
-                    <!-- <div class="credential-id">Credential ID: UC-0b063867-a288-45b8-b2ff-8ef1c337b59a</div> -->
+                     <div class="achievement-item">
+                    <div class="achievement-title">Dog breed image classification using transfer learning</div>
+                    <div class="achievement-org">Udemy</div>
+                    <div class="achievement-date">May 2020</div>
+                    <div class="achievement-description">Developed a model for dog breed classification using transfer learning techniques.</div>
 					<a href="https://www.udemy.com/certificate/UC-0b063867-a288-45b8-b2ff-8ef1c337b59a/" class="project-link"><i class="fas fa-external-link-alt"></i> Show credential</a>
                 </div>
                 
-                <div class="cert-item">
-                    <div class="cert-title">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</div>
-                    <div class="cert-organization">DeepLearning.AI</div>
-                    <div class="cert-date">Mar 2020</div>
-                    <div class="cert-description">Advanced techniques for optimizing deep neural networks.</div>
-                    <!-- <div class="credential-id">Credential ID: C25K6WZ3EEH7</div> -->
+                <div class="achievement-item">
+                    <div class="achievement-title">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</div>
+                    <div class="achievement-org">DeepLearning.AI</div>
+                    <div class="achievement-date">Mar 2020</div>
+                    <div class="achievement-description">Advanced techniques for optimizing deep neural networks.</div>
 					<a href="https://www.coursera.org/account/accomplishments/verify/C25K6WZ3EEH7" class="project-link"><i class="fas fa-external-link-alt"></i> Show credential</a>
 
                 </div>
                 
-                <div class="cert-item">
-                    <div class="cert-title">Neural Networks and Deep Learning</div>
-                    <div class="cert-organization">DeepLearning.AI</div>
-                    <div class="cert-date">Feb 2020</div>
-                    <div class="cert-description">Fundamentals of neural networks and deep learning architectures.</div>
-                    <!-- <div class="credential-id">Credential ID: A3RP8X5G9EKU</div> -->
+                <div class="achievement-item">
+                    <div class="achievement-title">Neural Networks and Deep Learning</div>
+                    <div class="achievement-org">DeepLearning.AI</div>
+                    <div class="achievement-date">Feb 2020</div>
+                    <div class="achievement-description">Fundamentals of neural networks and deep learning architectures.</div>
 					<a href="https://www.coursera.org/account/accomplishments/verify/A3RP8X5G9EKU" class="project-link"><i class="fas fa-external-link-alt"></i> Show credential</a>
 
                 </div>
                 
-                <div class="cert-item">
-                    <div class="cert-title">Deep Learning For Computer Vision</div>
-                    <div class="cert-organization">Udemy</div>
-                    <div class="cert-date">Jan 2020</div>
-                    <div class="cert-description">Applied deep learning techniques to computer vision problems.</div>
-                    <!-- <div class="credential-id">Credential ID: UC-EQGQDQZX</div> -->
+                <div class="achievement-item">
+                    <div class="achievement-title">Deep Learning For Computer Vision</div>
+                    <div class="achievement-org">Udemy</div>
+                    <div class="achievement-date">Jan 2020</div>
+                    <div class="achievement-description">Applied deep learning techniques to computer vision problems.</div>
 					<a href="https://www.udemy.com/certificate/UC-EQGQDQZX/" class="project-link"><i class="fas fa-external-link-alt"></i> Show credential</a>
 
                 </div>
 
-				<div class="cert-item">
-                    <div class="cert-title">Django | Build & Deploy Fully Featured Web Application</div>
-                    <div class="cert-organization">Udemy</div>
-                    <div class="cert-date">Jan 2020</div>
-                    <div class="cert-description">Hands-on experience with Python and Django through a real-word project.</div>
-                    <!-- <div class="credential-id">Credential ID: UC-M4LUDN2W</div> -->
+				<div class="achievement-item">
+                    <div class="achievement-title">Django | Build & Deploy Fully Featured Web Application</div>
+                    <div class="achievement-org">Udemy</div>
+                    <div class="achievement-date">Jan 2020</div>
+                    <div class="achievement-description">Hands-on experience with Python and Django through a real-word project.</div>
 					<a href="https://www.udemy.com/certificate/UC-M4LUDN2W/" class="project-link"><i class="fas fa-external-link-alt"></i> Show credential</a>
 
                 </div>
                 
-                <div class="cert-item">
-                    <div class="cert-title">Machine Learning Practical Workout | 8 Real-World Projects</div>
-                    <div class="cert-organization">Udemy</div>
-                    <div class="cert-date">Jan 2020</div>
-                    <div class="cert-description">Hands-on experience with machine learning through real-world projects.</div>
-                    <!-- <div class="credential-id">Credential ID: UC-AKTGAJNS</div> -->
+                <div class="achievement-item">
+                    <div class="achievement-title">Machine Learning Practical Workout | 8 Real-World Projects</div>
+                    <div class="achievement-org">Udemy</div>
+                    <div class="achievement-date">Jan 2020</div>
+                    <div class="achievement-description">Hands-on experience with machine learning through real-world projects.</div>
 					<a href="https://www.udemy.com/certificate/UC-AKTGAJNS/" class="project-link"><i class="fas fa-external-link-alt"></i> Show credential</a>
 
                 </div>
                 
-                <div class="cert-item">
-                    <div class="cert-title">Microsoft Professional Program in Data Science</div>
-                    <div class="cert-organization">Microsoft</div>
-                    <div class="cert-date">Dec 2019</div>
-                    <div class="cert-description">Comprehensive data science program covering the full data science lifecycle.</div>
+                <div class="achievement-item">
+                    <div class="achievement-title">Microsoft Professional Program in Data Science</div>
+                    <div class="achievement-org">Microsoft</div>
+                    <div class="achievement-date">Dec 2019</div>
+                    <div class="achievement-description">Comprehensive data science program covering the full data science lifecycle.</div>
                     <div class="credential-id">Credential ID: A03A0BE8-D2CE-42A3-8D8E-4B447FA360AF</div>
                 </div>
                 
-                <div class="cert-item">
-                    <div class="cert-title">Detect and classify Pneumonia from x-ray images using deep learning</div>
-                    <div class="cert-organization">Kaggle</div>
-                    <div class="cert-date">2019</div>
-                    <div class="cert-description">Developed a deep learning model to detect and classify pneumonia from chest x-ray images.</div>
+                <div class="achievement-item">
+                    <div class="achievement-title">Detect and classify Pneumonia from x-ray images using deep learning</div>
+                    <div class="achievement-org">Kaggle</div>
+                    <div class="achievement-date">2019</div>
+                    <div class="achievement-description">Developed a deep learning model to detect and classify pneumonia from chest x-ray images.</div>
                     <a href="https://www.kaggle.com/code/johnbagiliko/kernel36b667b425" class="project-link"><i class="fas fa-external-link-alt"></i> View on Kaggle</a>
+                </div>
+                    
+                    <!-- More certification items... -->
                 </div>
             </div>
         </div>
-	</section>
+    </section>
 
-	<section id="tools-software">
-	 <header>
-            <h1> Tools & Software</h1>
-            <p class="subtitle">I am proficient at using the following tools and software:</p>
-        </header>
-	<!-- technology -->
-	<aside class="clients">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-center">Data Science | Machine Learning | Deep Learning | Data Analytics | Remote Sensing</h3>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/tensorflow.jpeg" class="img-responsive img-centered logo" alt="HTML transparent logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/download.png" class="img-responsive img-centered logo" alt="CSS transparent logo PNG">
-				</div>
-			  <div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/python.png" class="img-responsive img-centered logo" alt="ReactJS transparent logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/r.jpeg" class="img-responsive img-centered logo" alt="Redux logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/excel.png" class="img-responsive img-centered logo" alt="Redux logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/r-instat.jpeg" class="img-responsive img-centered logo" alt="Redux logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/r-studio.png" class="img-responsive img-centered logo" alt="Redux logo square PNG">
-				</div> 
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/jupyter-notebook.png" class="img-responsive img-centered logo" alt="Redux logo square PNG">
-				</div> 
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/google_earth.png" class="img-responsive img-centered logo" alt="Google Earth Engine Logo">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/qgis.png" class="img-responsive img-centered logo" alt="QGIS logo">
-				</div> 
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/aws.png" class="img-responsive img-centered logo" alt="AWS logo">
-				</div> 
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/sklearn.jpeg" class="img-responsive img-centered logo" alt="Scikit Learn logo">
-				</div> 
-			</div>
-				
-			
-			
-			<div class="row">
-				<h3 class="text-center">Software Development</h3>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/html.png" class="img-responsive img-centered logo" alt="HTML transparent logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/css.png" class="img-responsive img-centered logo" alt="CSS transparent logo PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/javascript.png" class="img-responsive img-centered logo" alt="JavaScript transparent logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/bootstrap.png" class="img-responsive img-centered logo" alt="Bootstrap transparent logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/python.png" class="img-responsive img-centered logo" alt="Redux logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/django.png" class="img-responsive img-centered logo" alt="django transparent logo PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/mysql.jpg" class="img-responsive img-centered logo" alt="MySQL logo square JPG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/postgres.png" class="img-responsive img-centered logo" alt="Parse Server transparent logo square PNG">
-				</div>
+    <!-- Tools & Software -->
+    <section id="tools" class="section">
+        <div class="container">
+            <h1>Tools & Software</h1>
+            <p class="section-subheading">I am proficient at using the following tools and software:</p>
+            
+            <div class="tools-grid">
+                <div class="tool-category">
+                    <h3>Data Science & Machine Learning</h3>
+                    <div class="tool-logos">
+                        <img src="images/logos/tensorflow.jpeg" alt="TensorFlow" class="tool-logo">
+                        <img src="images/logos/python.png" alt="Python" class="tool-logo">
+                        <img src="images/logos/r.jpeg" alt="R" class="tool-logo">
+                        <img src="images/logos/sklearn.jpeg" alt="Scikit-learn" class="tool-logo">
+                        <img src="images/logos/jupyter-notebook.png" alt="Jupyter" class="tool-logo">
+                    </div>
+                </div>
+                
+                <div class="tool-category">
+                    <h3>Software Development</h3>
+                    <div class="tool-logos">
+                        <img src="images/logos/html.png" alt="HTML" class="tool-logo">
+                        <img src="images/logos/css.png" alt="CSS" class="tool-logo">
+                        <img src="images/logos/javascript.png" alt="JavaScript" class="tool-logo">
+                        <img src="images/logos/django.png" alt="Django" class="tool-logo">
+                    </div>
+                </div>
+                
+                <div class="tool-category">
+                    <h3>Remote Sensing & GIS</h3>
+                    <div class="tool-logos">
+                        <img src="images/logos/google_earth.png" alt="Google Earth Engine" class="tool-logo">
+                        <img src="images/logos/qgis.png" alt="QGIS" class="tool-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			</div>
-			
-			<div class="row">
-				<h3 class="text-center">Operating Systems and Technologies</h3>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/latex.png" class="img-responsive img-centered logo" alt="Heroku transparent logo square PNG">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/linux.png" class="img-responsive img-centered logo" alt="linux logo">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/windows.jpeg" class="img-responsive img-centered logo" alt="windows logo">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3">
-					<img src="images/logos/git.png" class="img-responsive img-centered logo" alt="Git logo">
-				</div>
-				
-			</div>
-		</div>
-	</aside>
-	</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center">Contact <span>John</span></h2>
+            <h3 class="section-subheading">What else?</h3>
+            
+            <div class="grid-container">
+                <div class="contact-info">
+                    <h3>Follow Me!</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/john-bagiliko-b97b0b155/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/john-bagiliko" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>My Contact Info</h3>
+                    <p>Contact me for more information.</p>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-phone"></i> +233 20 874 0869 / +233 55 322 6200 / +250 79 000 3743</li>
+                        <li><i class="fas fa-envelope"></i> john.bagiliko@aims-senegal.org / jbagiliko@aimsric.org / john@africlimate.ai</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Remera, Kigali, Rwanda</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- start contact -->
-	<section id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h2 class="section-heading wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>John</span></h2>
-					<h3 class="section-subheading text-muted">What else?</h3>
-				</div>
-			</div>
-			<div class="row">
+    <!-- CV Section -->
+    <section id="cv" class="section">
+        <div class="container">
+            <h2 class="text-center">Curriculum <span>Vitae</span></h2>
+            <div class="cv-container">
+                <embed src="documents/Bagiliko_CV.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 John Bagiliko. All rights reserved.</p>
+        </div>
+    </footer>
 
-				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-					<h4>Follow me!</h4>
-					<ul class="social-icon">
-
-						<!-- <li><a href="https://fb.com/bagiliko.john" class="fa fa-3x fa-facebook"> -->
-
-							<!-- </a></li> -->
-						<!-- <li><a href="https://twitter.com/myzta_tee" class="social-icon">
-							<i class="fa-brands fa-x-twitter"></i>
-							</a></li> -->
-						<!-- <li><a href="https://www.instagram.com/myzta_tee/" class="fa fa-3x fa-instagram"> -->
-
-							<!-- </a></li> -->
-						<li><a href="https://www.linkedin.com/in/john-bagiliko-b97b0b155/" class="social-icon">
-							<i class="fa-brands fa-linkedin"></i>
-							</a></li>
-						<li><a href="https://github.com/john-bagiliko" class="social-icon">
-							<i class="fa-brands fa-github"></i>
-							</a></li>
-					</ul>
-
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
-					<address>
-						<p class="address-title">MY CONTACT INFO</p>
-						<span>Contact me for more information.</span>
-						<p><i class="fa fa-phone"></i> +233 20 874 0869 / +233 55 322 6200 / +250 79 000 3743</p>
-						<p><i class="fa fa-envelope-o"></i> <a href="mailto:john.bagiliko@aims-senegal.org
-								?subject=More Enquiries"></a>
-							john.bagiliko@aims-senegal.org / jbagiliko@aimsric.org / john@africlimate.ai</p>
-						<p><i class="fa fa-map-marker"></i> Remera, Kigali, Rwanda</p>
-					</address>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end contact -->
-
-	<section id="cv">
-	  <h2 class="section-heading wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">Curriculum <span>Vitae</span></h2>
-		<embed src="documents/Bagiliko_CV.pdf" type="application/pdf" width="100%" height="1200px" />
-	</section>
-
-	
-
-	<!-- start copyright -->
-	<footer id="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-						Copyright &copy; 2025 by John Bagiliko</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- end copyright -->
-
+    <!-- Smooth scrolling script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
